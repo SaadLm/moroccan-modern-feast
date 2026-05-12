@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Brand & Description */}
           <div>
             <h3 className="text-2xl font-serif font-bold text-primary mb-4">
-              La Fille & La Chèvre
+              Abdessamad Chara
             </h3>
             <p className="text-muted-foreground mb-4">
               Cuisine marocaine moderne. Plats à partager. Inspiration globale.
@@ -82,7 +82,7 @@ const Footer = () => {
               <li className="flex items-center space-x-3">
                 <Mail size={20} className="text-primary flex-shrink-0" />
                 <a href="mailto:contact@lafillelachevre.ma" className="text-muted-foreground hover:text-primary transition-colors">
-                  contact@lafillelachevre.ma
+                  abdsamad9c@gmail.com
                 </a>
               </li>
             </ul>
