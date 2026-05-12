@@ -35,8 +35,9 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex-shrink-0">
             <h1 className="text-2xl sm:text-3xl font-serif font-bold text-primary">
-              La Fille & La Chèvre
+              Tafarnout
             </h1>
+            <img src="../public/image.png"></img>
           </Link>
 
           {/* Desktop Navigation */}
