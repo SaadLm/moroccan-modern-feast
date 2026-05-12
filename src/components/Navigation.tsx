@@ -27,17 +27,18 @@ const Navigation = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-card/95 backdrop-blur-md shadow-soft" : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent
+        ${
+        isScrolled ? "bg-card/95 backdrop-blur-md shadow-soft text-primary" : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex-shrink-0">
+          <Link to="/" className="flex-shrink-0 d-flex">
             <h1 className="text-2xl sm:text-3xl font-serif font-bold text-primary">
               Tafarnout
             </h1>
-            <img src="../public/image.png"></img>
+            {/* <img className="w-25" src="../public/image.png"></img> */}
           </Link>
 
           {/* Desktop Navigation */}
@@ -46,7 +47,7 @@ const Navigation = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
+                className={`text-sm text-white font-medium transition-colors hover:text-primary ${
                   location.pathname === link.path
                     ? "text-primary"
                     : "text-foreground/80"
